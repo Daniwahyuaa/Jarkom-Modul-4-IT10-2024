@@ -10,6 +10,9 @@
 ### Topologi GNS3
 ![image](https://github.com/user-attachments/assets/e650aa66-8c84-4796-9493-b064c9d786dc)
 
+### Topologi CPT
+![Topologi CPT](https://github.com/user-attachments/assets/7521821a-0ad4-40c3-af49-e2f7a3ad84fa)
+
 ### Subnetting dan Pengelompokkan
 - Pembagian Rute:
   ![image](https://github.com/user-attachments/assets/09399db1-95ac-4536-9c0c-11830ed39cbb)
