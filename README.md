@@ -66,3 +66,302 @@ Setelah dilakukan pengelompokan IP, kita melakukan pembagian IP menggunakan tree
 
 ![image](https://github.com/user-attachments/assets/411564e8-bd90-43c2-823f-aead032b2ced)
 
+### Configurasi
+#### Hololive (GateAway)
+```
+#A15
+bash
+auto eth1
+iface eth1 inet static
+    address 192.238.66.5
+    netmask 255.255.255.252
+
+#A16
+auto eth2
+iface eth2 inet static
+    address 192.238.4.5
+    netmask 255.255.255.252
+
+#A21
+auto eth3
+iface eth3 inet static
+    address 192.238.10.25
+    netmask 255.255.255.252
+```
+#### Holo-EN (Gateway)
+```
+#A15
+auto eth0
+iface eth0 inet static
+    address 192.238.66.6
+    netmask 255.255.255.252
+    gateway 192.242.66.5
+
+#A14
+auto eth1
+iface eth1 inet static
+    address 192.238.66.1
+    netmask 255.255.255.252
+
+#A20
+auto eth2
+iface eth2 inet static
+    address 192.238.16.33
+    netmask 255.255.255.252
+```
+#### Holo-Myth (GateAway)
+```
+#A14
+auto eth0
+iface eth0 inet static
+    address 192.238.66.2
+    netmask 255.255.255.252
+    gateway 192.242.66.1
+
+#A11
+auto eth1
+iface eth1 inet static
+    address 192.238.64.1
+    netmask 255.255.254.0
+
+#A12
+auto eth2
+iface eth2 inet static
+    address 192.238.32.65
+    netmask 255.255.255.248
+```
+#### Gura_Ame_Ina (Client)
+```
+#A11
+auto eth0
+iface eth0 inet static
+    address 192.238.64.2
+    netmask 255.255.254.0
+    gateway 192.238.64.1
+
+Kiara_Calli (Client)
+#A11
+auto eth0
+iface eth0 inet static
+    address 192.238.64.3
+    netmask 255.255.254.0
+    gateway 192.238.64.1
+\\
+```
+#### Holo Advent (Gateway)
+```
+#A20
+auto eth0
+iface eth0 inet static
+    address 192.238.16.34
+    netmask 255.255.255.252
+    gateway 192.238.16.33
+
+#A8
+auto eth1
+iface eth1 inet static
+    address 192.238.16.1
+    netmask 255.255.255.224
+```
+#### FuwaMoco (Client)
+```
+#A8
+auto eth0
+iface eth0 inet static
+    address 192.238.16.2
+    netmask 255.255.255.224
+    gateway 192.238.16.1
+```
+#### Shiori_Nerissa (Client)
+```
+#A8
+auto eth0
+iface eth0 inet static
+    address 192.238.16.3
+    netmask 255.255.255.224
+    gateway 192.238.16.1
+```
+#### Biboo (Client
+```
+#A8
+auto eth0
+iface eth0 inet static
+    address 192.238.16.4
+    netmask 255.255.255.224
+    gateway 192.238.16.1
+```
+#### Project-Hope (Gateway)
+```
+#A12
+auto eth0
+iface eth0 inet static
+    address 192.238.32.66
+    netmask 255.255.255.248
+    gateway 192.238.32.65
+
+#A10
+auto eth1
+iface eth1 inet static
+    address 192.238.32.73
+    netmask 255.255.255.248
+```
+#### Irys (Client)
+```
+#A10
+auto eth0
+iface eth0 inet static
+    address 192.238.32.74
+    netmask 255.255.255.248
+    gateway 192.238.32.73
+```
+#### Holo-Council (Gateway)
+```
+#A12
+auto eth0
+iface eth0 inet static
+    address 192.238.32.67
+    netmask 255.255.255.248
+    gateway 192.238.32.65
+
+#A9
+auto eth1
+iface eth1 inet static
+    address 192.238.32.1
+    netmask 255.255.255.192
+```
+#### Kronii_Mumei (Client)
+```
+#A9
+auto eth0
+iface eth0 inet static
+    address 192.238.32.2
+    netmask 255.255.255.192
+    gateway 192.238.32.1
+```
+#### Bae_Fauna (Client)
+```
+#A9
+auto eth0
+iface eth0 inet static
+    address 192.238.32.3
+    netmask 255.255.255.192
+    gateway 192.238.32.1
+```
+#### Holo-ID (Gateway)
+```
+#A16
+auto eth0
+iface eth0 inet static
+    address 192.238.4.6
+    netmask 255.255.255.252
+
+#A17
+auto eth1
+iface eth1 inet static
+    address 192.238.4.1
+    netmask 255.255.255.252
+
+#A18
+auto eth2
+iface eth2 inet static
+    address 192.238.16.65
+    netmask 255.255.255.252
+
+#A19
+auto eth3
+iface eth3 inet static
+    address 192.238.34.1
+    netmask 255.255.255.252
+```
+#### AREA15 (Gateway)
+```
+#A17
+auto eth0
+iface eth0 inet static
+    address 192.238.4.2
+    netmask 255.255.255.252
+    gateway 192.238.4.1
+#A1
+auto eth1
+iface eth1 inet static
+    address 192.238.0.1
+    netmask 255.255.252.0
+```
+#### lofi (Client)
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 192.238.0.2
+    netmask 255.255.252.0
+    gateway 192.238.0.1
+```
+#### Moona (Client)
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 192.238.0.3
+    netmask 255.255.252.0
+    gateway 192.238.0.1
+```
+#### Risu (Client)
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 192.238.0.4
+    netmask 255.255.252.0
+    gateway 192.238.0.1
+```
+#### holoro (Gateway)
+```
+#A18
+auto eth0
+iface eth0 inet static
+    address 192.238.16.66
+    netmask 255.255.255.252
+    gateway 192.238.16.65
+
+### A2
+auto eth1
+iface eth1 inet static
+    address 192.238.16.1
+    netmask 255.255.252.192
+```
+#### Ollie (Client)
+```
+#A2
+auto eth0
+iface eth0 inet static
+    address 192.238.16.2
+    netmask 255.255.252.192
+    gateway 192.238.16.1
+```
+#### Anya (Client)
+```
+#A2
+auto eth0
+iface eth0 inet static
+    address 192.238.16.3
+    netmask 255.255.252.192
+    gateway 192.238.16.1
+```
+#### Reine (Client)
+```
+#A2
+auto eth0
+iface eth0 inet static
+    address 192.238.16.4
+    netmask 255.255.252.192
+    gateway 192.238.16.1
+```
+#### holoh3ro (Gateway)
+```
+#A19
+auto eth0
+iface eth0 inet static
+    address 192.238.34.2
+    netmask 255.255.255.252
+    gateway 192.238.34.1
+```
